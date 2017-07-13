@@ -1,4 +1,4 @@
-package asd.labs.lab2;
+package asd.labs.lab2.stock_market;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,7 +1,7 @@
-package asd.labs.lab2;
+package asd.labs.lab2.stock_market;
 
 public class Application {
-		public static void main(String[] args) {
+	public static void main(String[] args) {
 		StockMarket market = new StockMarket();
 		StockBuyer buyer = new StockBuyer(market);
 		StockViewer viewer = new StockViewer(market);

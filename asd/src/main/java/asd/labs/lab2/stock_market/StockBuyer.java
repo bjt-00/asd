@@ -1,4 +1,4 @@
-package asd.labs.lab2;
+package asd.labs.lab2.stock_market;
 
 public class StockBuyer extends AbstractMarket {
 	public StockBuyer(StockMarket stockMarket){

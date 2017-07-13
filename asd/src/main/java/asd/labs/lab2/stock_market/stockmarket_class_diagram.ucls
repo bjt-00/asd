@@ -1,66 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="asd.labs.lab2.AbstractMarket" project="asd" 
-    file="/asd/src/main/java/asd/labs/lab2/AbstractMarket.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="115" x="134" y="243"/>    
+  <class id="1" language="java" name="asd.labs.lab2.stock_market.AbstractMarket" project="asd" 
+    file="/asd/src/main/java/asd/labs/lab2/stock_market/AbstractMarket.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="115" x="424" y="209"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="asd.labs.lab2.StockViewer" project="asd" 
-    file="/asd/src/main/java/asd/labs/lab2/StockViewer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="156" x="35" y="382"/>    
+  <class id="2" language="java" name="asd.labs.lab2.stock_market.StockViewer" project="asd" 
+    file="/asd/src/main/java/asd/labs/lab2/stock_market/StockViewer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="156" x="271" y="348"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="asd.labs.lab2.StockBuyer" project="asd" 
-    file="/asd/src/main/java/asd/labs/lab2/StockBuyer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="149" x="231" y="382"/>    
+  <class id="3" language="java" name="asd.labs.lab2.stock_market.Application" project="asd" 
+    file="/asd/src/main/java/asd/labs/lab2/stock_market/Application.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="271" y="-20"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="asd.labs.lab2.StockMarket" project="asd" 
-    file="/asd/src/main/java/asd/labs/lab2/StockMarket.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="167" x="134" y="32"/>    
+  <class id="4" language="java" name="asd.labs.lab2.stock_market.StockBuyer" project="asd" 
+    file="/asd/src/main/java/asd/labs/lab2/stock_market/StockBuyer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="149" x="467" y="348"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="5">    
+  <class id="5" language="java" name="asd.labs.lab2.stock_market.StockMarket" project="asd" 
+    file="/asd/src/main/java/asd/labs/lab2/stock_market/StockMarket.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="192" x="424" y="-20"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="6">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="6" name="stockMarket">        
-        <position height="18" width="68" x="106" y="203"/>      
+      <attribute id="7" name="stockMarket">        
+        <position height="18" width="68" x="398" y="173"/>      
       </attribute>      
-      <multiplicity id="7" minimum="0" maximum="1"/>    
+      <multiplicity id="8" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="8">    
+  <generalization id="9">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="9">    
-    <end type="SOURCE" refId="3"/>    
+  <generalization id="10">    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <association id="10">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="11" name="marketList">        
-        <position height="18" width="53" x="131" y="223"/>      
+  <association id="11">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="12" name="marketList">        
+        <position height="18" width="59" x="528" y="182"/>      
       </attribute>      
-      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
+      <multiplicity id="13" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
